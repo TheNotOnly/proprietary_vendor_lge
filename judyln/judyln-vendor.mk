@@ -1,4 +1,5 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2020 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,37 +19,22 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/judyln
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/judyln/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
-    vendor/lge/judyln/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
-    vendor/lge/judyln/proprietary/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/lge/judyln/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
-    vendor/lge/judyln/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
-    vendor/lge/judyln/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/lge/judyln/proprietary/system/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/lge/judyln/proprietary/system/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/lge/judyln/proprietary/system/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
+    vendor/lge/judyln/proprietary/product/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/lge/judyln/proprietary/product/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/lge/judyln/proprietary/vendor/bin/chre:$(TARGET_COPY_OUT_VENDOR)/bin/chre \
-    vendor/lge/judyln/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/lge/judyln/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
     vendor/lge/judyln/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/lge/judyln/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
     vendor/lge/judyln/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service \
-    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.configstore@1.0-service \
-    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service \
-    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.lge.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.sensors@1.0-service \
-    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.lge.hardware.wifi.hal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.wifi.hal@1.0-service \
+    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/lge/judyln/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor/lge/judyln/proprietary/vendor/bin/hw/wlan_ril:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wlan_ril \
     vendor/lge/judyln/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/lge/judyln/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/lge/judyln/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/lge/judyln/proprietary/vendor/bin/seemp_healthd:$(TARGET_COPY_OUT_VENDOR)/bin/seemp_healthd \
     vendor/lge/judyln/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
-    vendor/lge/judyln/proprietary/vendor/bin/sns_sensor_test_cpp:$(TARGET_COPY_OUT_VENDOR)/bin/sns_sensor_test_cpp \
     vendor/lge/judyln/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
-    vendor/lge/judyln/proprietary/vendor/bin/wigighalsvc:$(TARGET_COPY_OUT_VENDOR)/bin/wigighalsvc \
-    vendor/lge/judyln/proprietary/vendor/bin/wigignpt:$(TARGET_COPY_OUT_VENDOR)/bin/wigignpt \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Codec_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
@@ -57,35 +43,26 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Bluetooth_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Codec_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/General_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Global_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Handset_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Hdmi_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Headset_cal.acdb \
-    vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Speaker_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/camera/camera_tune_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_tune_config.xml \
-    vendor/lge/judyln/proprietary/vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vnr/SJ_VideoNR_LUT.bin \
+    vendor/lge/judyln/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
+    vendor/lge/judyln/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.configstore@1.0-service.rc \
-    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc \
-    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.sensors@1.0-service.rc \
-    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.wifi.hal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.wifi.hal@1.0-service.rc \
+    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/lge/judyln/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/lge/judyln/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml \
+    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml \
+    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml \
+    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml \
+    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
     vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml \
-    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml \
-    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml \
-    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml \
-    vendor/lge/judyln/proprietary/vendor/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/ak991x_dri_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/apds9160_0_reva.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/apds9160_0_reva.json \
@@ -93,21 +70,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/apds9160_0_revd_sub1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/apds9160_0_revd_sub1.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/apds9160_0_revd_sub2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/apds9160_0_revd_sub2.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/apds9939_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/apds9939_0.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/bmp285_0.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/etc_version:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/etc_version \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/icm4x6xx_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/icm4x6xx_0_reva.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/icm4x6xx_0_reva.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/lsm6ds3_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/lsm6ds3_0.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/lsm6dsm_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_ak991x_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_apds9160_0_reva.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub1.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub2.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_apds9939_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_apds9939_0.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_bmp285_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_icm4x6xx_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva.json \
-    vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_lsm6dsm_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_power_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_spl06_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_spl06_0.json \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/config/sdm845_tmx4903.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/sdm845_tmx4903.json \
@@ -145,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/registry/sensors_settings:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/registry/sensors_settings \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/registry/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/sns_reg_config \
     vendor/lge/judyln/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/lge/judyln/proprietary/vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/GLOBAL/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch0.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch1.bin \
@@ -157,15 +129,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/NA_GSM/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/NA_GSM/bdwlan.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/NA_GSM/bdwlan_ch0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/NA_GSM/bdwlan_ch0.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/NA_GSM/bdwlan_ch1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/NA_GSM/bdwlan_ch1.bin \
-    vendor/lge/judyln/proprietary/vendor/etc/wifi/PerProviderSubscription.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/PerProviderSubscription.conf \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/bdwlan_ch0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch0.bin \
     vendor/lge/judyln/proprietary/vendor/etc/wifi/bdwlan_ch1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch1.bin \
-    vendor/lge/judyln/proprietary/vendor/etc/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
-    vendor/lge/judyln/proprietary/vendor/etc/wifi/wigig_p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_p2p_supplicant.conf \
-    vendor/lge/judyln/proprietary/vendor/etc/wifi/wigig_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_supplicant.conf \
     vendor/lge/judyln/proprietary/vendor/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin \
     vendor/lge/judyln/proprietary/vendor/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin \
     vendor/lge/judyln/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -210,14 +178,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
     vendor/lge/judyln/proprietary/vendor/lib/camera/com.qti.tuned.imx351.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.imx351.bin \
     vendor/lge/judyln/proprietary/vendor/lib/camera/com.qti.tuned.imx351_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.imx351_wide.bin \
+    vendor/lge/judyln/proprietary/vendor/lib/camera/com.qti.tuned.imx351_wide_p.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.imx351_wide_p.bin \
     vendor/lge/judyln/proprietary/vendor/lib/camera/com.qti.tuned.sl846.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sl846.bin \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.camerasolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.camerasolution.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.capturebokeh.so \
+    vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.elpis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.elpis.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.elvis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.elvis.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.hdr.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.lavis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.lavis.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.multiframe.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.multiframe.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.realtimebokeh.so \
+    vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.node.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.node.warp.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.stats.aec.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.stats.aecwrapper.so \
     vendor/lge/judyln/proprietary/vendor/lib/camera/components/com.lge.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.lge.stats.af.so \
@@ -323,14 +294,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/hw/camera.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm845.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/fingerprint.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.sdm845.so \
-    vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.lge.hardware.lgatcmd@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.lgatcmd@1.0-impl.so \
-    vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.lge.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.sensors@1.0-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib/lib.com.lge.elvis.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib.com.lge.elvis.so \
     vendor/lge/judyln/proprietary/vendor/lib/libAutoContrast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAutoContrast.so \
     vendor/lge/judyln/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
     vendor/lge/judyln/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libLgeVendorFeatures2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLgeVendorFeatures2.so \
     vendor/lge/judyln/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/lge/judyln/proprietary/vendor/lib/libSJVideoNR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSJVideoNR.so \
     vendor/lge/judyln/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
@@ -343,6 +315,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libatd_modeminterface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatd_modeminterface.so \
     vendor/lge/judyln/proprietary/vendor/lib/libbluedroid_bdt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluedroid_bdt.so \
     vendor/lge/judyln/proprietary/vendor/lib/libbwfocuspeaking.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwfocuspeaking.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
     vendor/lge/judyln/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
     vendor/lge/judyln/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
@@ -358,7 +332,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libfilm_emulation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilm_emulation.so \
     vendor/lge/judyln/proprietary/vendor/lib/libfilm_emulation_symphony.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilm_emulation_symphony.so \
     vendor/lge/judyln/proprietary/vendor/lib/libfpfactory-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpfactory-impl.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_algo.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
     vendor/lge/judyln/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
@@ -372,7 +345,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/liblgdnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgdnn.so \
     vendor/lge/judyln/proprietary/vendor/lib/liblgefido_hal_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgefido_hal_impl.so \
     vendor/lge/judyln/proprietary/vendor/lib/liblgehdcpek.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgehdcpek.so \
-    vendor/lge/judyln/proprietary/vendor/lib/liblgftmitem.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgftmitem.so \
+    vendor/lge/judyln/proprietary/vendor/lib/liblgftmitem_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgftmitem_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib/liblghdri.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblghdri.so \
     vendor/lge/judyln/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/lge/judyln/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
@@ -414,10 +387,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
     vendor/lge/judyln/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/lge/judyln/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libsymphony-1.1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.2.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.4.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libsymphonypower-1.1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.2.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libunified_sysfs_pm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunified_sysfs_pm.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libunified_sysfs_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunified_sysfs_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib/libwvoemprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvoemprov.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/AlacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/AlacDecoderModule.so.1 \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/ApeDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/ApeDecoderModule.so.1 \
@@ -446,10 +421,16 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fastrpc_shell_0 \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fluence_voiceplus_module.so.1 \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/geofence.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/geofence.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/lg_nanoapp_pa.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/lg_nanoapp_pa.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/lg_nanoapp_sbd.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/lg_nanoapp_sbd.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/lg_nanoapp_su.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/lg_nanoapp_su.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libchre_slpi_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libchre_slpi_skel.so \
+    vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_add_constant.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
@@ -467,35 +448,47 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libsysmondomain_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsysmondomain_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/lowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/lowi_client.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/mmecns_module.so.1 \
-    vendor/lge/judyln/proprietary/vendor/lib/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hal.tof.so \
     vendor/lge/judyln/proprietary/vendor/lib/sensors.sar.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.sar.so \
     vendor/lge/judyln/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/lge/judyln/proprietary/vendor/lib/vendor.lge.hardware.lgatcmd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.lgatcmd@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib/vendor.lge.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.sensors@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib/vendor.lge.hardware.filehandle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.filehandle@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qseecom@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/fingerprint.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.sdm845.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.lge.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.sensors@1.0-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libLgeVendorFeatures2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLgeVendorFeatures2.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppf.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libdiagd_client_qca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagd_client_qca.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory-impl.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_algo.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
@@ -505,7 +498,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/lge/judyln/proprietary/vendor/lib64/liblgefido_hal_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgefido_hal_impl.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/liblgftmitem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgftmitem.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/liblgftmitem_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgftmitem_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
@@ -514,7 +507,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libril_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril_wrapper.so \
     vendor/lge/judyln/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/lge/judyln/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
@@ -548,24 +540,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libwfcu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfcu.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libunified_sysfs_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunified_sysfs_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib64/sensors.sar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sar.so \
     vendor/lge/judyln/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.configstore@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.sensors@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.wifi.hal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.wifi.hal@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.wifi.hostapd@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.wifi.supplicant@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.lge.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.wifi.supplicant@2.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
-    vendor.qti.hardware.sensorscalibrate-V1.0-java
+    HotwordEnrollmentXGoogleHEXAGON
